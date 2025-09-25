@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="description" content="webstudio" />
     <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!--Підключення шрифтів-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@700&family=Roboto:ital,wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!--Піключення нормализації-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <!--Підключення папки зі стилями-->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--HEADER PAGE-->
     <header class="header-page">
-      <div class="container">
+      <div class="container second">
         <nav class="topline-box">
           <a class="topline-logo-web" href="./index.html"
             >Web<span class="topline-logo-studio">Studio</span></a
           >
           <ul class="topline-menu-nav">
-            <li>
+            <li class="menu-item">
               <a class="topline-scroll" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a class="topline-scroll" href="">Portfolio</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a class="topline-scroll" href="">Contacts</a>
             </li>
           </ul>
@@ -51,18 +55,20 @@
         </address>
       </div>
     </header>
+    <!--MAIN PAGE-->
     <main>
-      <section class="hero-image">
-        <div class="container">
-          <h1 class="hero-image-title">
-            Effective Solutions for Your Business
-          </h1>
-          <button class="hero-image-btn" type="button">Order Service</button>
+      <!--HERO SECTION-->
+      <section class="hero hero-conteiner">
+        <div class="container ">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
+
+      <!--FEATURE SECTION-->
       <section class="feature">
         <div class="container">
-          <h2 class="feature-banner">Four articles</h2>
+          <h2 class="is-hidden">Four articles</h2>
           <ul class="feature-box">
             <li>
               <h3 class="feature-title">Strategy</h3>
@@ -95,13 +101,15 @@
           </ul>
         </div>
       </section>
+
+      <!--TEAM SECTION-->
       <section class="team">
         <div class="container">
           <h2 class="team-banner">Our Team</h2>
           <ul class="team-box">
             <li class="team-card">
               <img
-                src="./images/imgMarkGuerrero.jpg"
+                src="./images/team/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -111,7 +119,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/imgTomFord.jpg"
+                src="./images/team/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -121,7 +129,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/imgCamilaGarcia.jpg"
+                src="./images/team/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -131,7 +139,7 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/imgDanielWilson.jpg"
+                src="./images/team/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -142,74 +150,100 @@
           </ul>
         </div>
       </section>
+
+      <!--PORTFOLIO SECTION-->
       <section class="portfolio">
-        <h2 class="portfolio-banner">Our Portfolio</h2>
-        <div class="container">
-          <ul>
-            <li>
-              <img
-                src="./images/BankingApp.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Banking App</h3>
-              <p class="portfolio-text">App</p>
-            </li>
-            <li>
-              <img
-                src="./images/CashlessPayment.jpg"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Cashless Payment</h3>
-              <p class="portfolio-text">Marketing</p>
-            </li>
-            <li>
-              <img
-                src="./images/MeditationApp.jpg"
-                alt="Meditation App"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Meditation App</h3>
-              <p class="portfolio-text">App</p>
-            </li>
-            <li>
-              <img
-                src="./images/TaxiService.jpg"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Taxi Service</h3>
-              <p class="portfolio-text">Marketing</p>
-            </li>
-            <li>
-              <img
-                src="./images/ScreenIllustrations.jpg"
-                alt="Screen Illustrations"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Screen Illustrations</h3>
-              <p class="portfolio-text">Design</p>
-            </li>
-            <li>
-              <img
-                src="./images/OnlineCourses.jpg"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
-              <h3 class="portfolio-title">Online Courses</h3>
-              <p class="portfolio-text">Marketing</p>
-            </li>
+        <div class="container portfolio-conteiner">
+          <h2 class="portfolio-banner">Our Portfolio</h2>
+
+          <ul class="portfolio-box">
+            <!-- <div class="portfolio-box-one"> -->
+              <li>
+                <img
+                  src="./images/portfolio/banking-app.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-content">
+                  <h3 class="portfolio-title">Banking App</h3>
+                  <p class="portfolio-text">App</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="./images/portfolio/cashless-payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-content">
+                  <h3 class="portfolio-title">Cashless Payment</h3>
+                  <p class="portfolio-text">Marketing</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="./images/portfolio/meditation-app.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="card-content">
+                  <h3 class="portfolio-title">Meditation App</h3>
+                  <p class="portfolio-text">App</p>
+                </div>
+              </li>
+            
+
+              <!-- <div class="portfolio-box-two"> -->
+                <li>
+                  <img
+                    src="./images/portfolio/taxi-service.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="portfolio-title">Taxi Service</h3>
+                    <p class="portfolio-text">Marketing</p>
+                  </div>
+                </li>
+
+                <li>
+                  <img
+                    src="./images/portfolio/screen-illustrations.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="portfolio-title">Screen Illustrations</h3>
+                    <p class="portfolio-text">Design</p>
+                  </div>
+                </li>
+
+                <li>
+                  <img
+                    src="./images/portfolio/online-courses.jpg"
+                    alt="Online Courses"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="portfolio-title">Online Courses</h3>
+                    <p class="portfolio-text">Marketing</p>
+                  </div>
+                </li>
+              </div>
+            </div>
           </ul>
         </div>
       </section>
     </main>
+    <!--FOOTER PAGE-->
     <footer class="end">
       <div class="container">
         <a class="end-logo-web" href="./index.html"
