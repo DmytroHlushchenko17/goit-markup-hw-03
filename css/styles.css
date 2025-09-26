@@ -63,7 +63,7 @@ img {
 
 /*==============================HEADER==================================*/
 
-.heder-page {
+.header-page {
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -99,6 +99,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .topline-menu-nav {
@@ -160,7 +161,7 @@ img {
 
 /*============================HERO SECTION====================================*/
 .hero {
-  padding: 120px 0;
+  padding: 188px 0;
 }
 
 .hero-conteiner {
@@ -194,6 +195,9 @@ img {
   background: #4d5ae5;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   text-align: center;
   display: block;
 }
@@ -209,11 +213,14 @@ img {
 
 /*=========================FEATURE SECTION==================================*/
 
+.feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .feature-box {
   display: flex;
   gap: 24px;
-  padding-top: 180px;
-  padding-bottom: 180px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -250,6 +257,7 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-box {
@@ -257,12 +265,16 @@ img {
   gap: 24px;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px;
-  margin-top: 72px;
   flex-basis: calc((100% - 24px) / 4);
 }
 
 .team-card {
   background-color: #fff;
+}
+
+.team-card-content {
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 
 .team-title {
@@ -272,7 +284,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -282,7 +294,6 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  margin-bottom: 32px;
 }
 /*===========================TEAM END===============================*/
 
@@ -364,6 +375,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .end-logo-studio {
