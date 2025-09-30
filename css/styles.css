@@ -19,12 +19,12 @@
 }
 
 body {
-  font-family: var(--font-family);
-  color: var(--text);
-  background: var(--bg-color);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
+  font-family: var (--font-family);
+  color: var (--text);
+  background: var (--bg-color);
+  font-size: var (--font-size);
+  line-height: var (--line-height);
+  letter-spacing: var (--letter-spacing);
 }
 
 ul,
@@ -60,6 +60,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .is-hidden {
@@ -110,9 +112,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-right: 76px;
 }
 
 .topline-logo-studio {
@@ -180,13 +179,9 @@ img {
   background: #2e2f42;
 }
 
-.hero-conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .hero-title {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -194,10 +189,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 496px;
+  width: 496px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -272,7 +267,6 @@ img {
 .team-box {
   display: flex;
   gap: 24px;
-  padding: 0px 0px 32px;
   flex-basis: calc((100% - 24px) / 4);
 }
 
