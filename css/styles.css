@@ -112,6 +112,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .topline-logo-studio {
@@ -122,7 +123,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  margin-right: 76px;
 }
 
 .topline-menu-nav {
